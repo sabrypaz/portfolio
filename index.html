@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
     <title>Portfolio</title>
 </head>
@@ -12,30 +15,71 @@
 <body>
     <header>
         <nav>
-            <div>
-                <a href="hola">HOLA</a>
-                <a href="conocimientos">CONOCIMIENTOS</a>
-                <a href="proyectos">PROYECTOS</a>
-                <a href="contacto">CONTACTO</a>
+            <div class="navbar">
+
+                <a href="#hola" class="link">HOLA</a>
+                <a href="#conocimientos" class="link">CONOCIMIENTOS</a>
+                <a href="#proyectos" class="link">PROYECTOS</a>
+                <button><a href="#contacto">CONTACTO</a></button>
+
             </div>
         </nav>
     </header>
-    <section>
-        <div>
+
+    <section class="presentacion">
+
+        <div class="saludo" id="hola">
+
             <div class="hola">¡Hola! Soy</div>
             <div class="nombre">Sabrina Paz</div>
-            <div class="descripcion">Confiable, divertida y amigable.</div>
-            <div class="boton">LO QUE HAGO</div>
-        </div>
-        <div>
-            <div>
-                <image src=""></image>
-            </div>
+            <div class="descripcion">Desarrolladora, confiable, divertida y amigable.</div>
+
+            <button><a href="#misProyectos">LO QUE HAGO</a></button>
+
+
         </div>
 
+        <div class="imagen">
+            <img src="developer.svg" alt="Desarrolladora en acción">
+        </div>
 
     </section>
 
+    <section class="conocimientos" id="conocimientos">
+
+        <div clas="lenguajes">
+            <h2 class="segundoTitulo">Mis Conocimientos</h2>
+            <p>Egresada de ADA ITW 2022</p>
+            <div class="cajitas">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML 5</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS 3</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-sass"></i>
+                    <p>Sass</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <p>Java Script</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>  
+                    <p>React</p> 
+                </div>
+                <div>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <p>GIT</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
