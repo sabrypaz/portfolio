@@ -32,15 +32,15 @@
 
             <div class="hola">¡Hola! Soy</div>
             <div class="nombre">Sabrina Paz</div>
-            <div class="descripcion">Desarrolladora, confiable, divertida y amigable.</div>
+            <div class="descripcion">Desarrolladora frontend, confiable, divertida y amigable.</div>
 
-            <button><a href="#misProyectos">LO QUE HAGO</a></button>
+            <button><a href="#proyectos">LO QUE HAGO</a></button>
 
 
         </div>
 
-        <div class="imagen">
-            <img src="developer.svg" alt="Desarrolladora en acción">
+        <div class="developer">
+            <img src="imagenes/developer.svg" alt="Desarrolladora en acción" class="desarrolladora">
         </div>
 
     </section>
@@ -55,7 +55,8 @@
 
                 <div class="iconoLen">
                     <div class="font">
-                        <i class="fa-brands fa-html5"></i></div>
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
 
                     <div>
                         <p>HTML 5</p>
@@ -94,7 +95,7 @@
     <!---++++++++++++++++++SECCION DE CITA++++++++++++++++++-->
 
     <blockquote class="frase">
-        <div class="comillas"><i class="fa-solid fa-quote-right" ></i>
+        <div class="comillas"><i class="fa-solid fa-quote-right"></i>
         </div>
 
         <p class="textoDeFrase">Si se puede imaginar,<br>
@@ -103,6 +104,155 @@
         <p class="autorDeFrase">Alguien</p>
 
     </blockquote>
+    <!---++++++++++++++SECCION DE PROYECTOS+++++++++++++++++-->
+    <section class="proyectos" id="proyectos">
+        <div class="tercerTitulo">
+            <h2 class="tituloMisProyectos">Mis proyectos</h2>
+            <p class="descripcion3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, impedit?</p>
+        </div>
+        <div class="cuadros">
+            <div class="project">
+                <img src="imagenes/portfolio.png" alt="Mi Portfolio">
+                <p class="parrafoProject">Portfolio</p>
+            </div>
+
+            <div class="project">
+                <img src="imagenes/undraw_mobile_user_re_xta4 (1).svg" alt="Generador de Memes">
+                <p class="parrafoProject">Generador de memes</p>
+            </div>
+
+            <div class="project">
+                <img src="imagenes/undraw_old_day_-6-x25.svg" alt="Match 3">
+                <p class="parrafoProject">Match 3</p>
+            </div>
+
+            <div class="project">
+                <img src="imagenes/undraw_make_it_rain_iwk4.svg" alt="Controlador de Gastos">
+                <p class="parrafoProject">Controlador de gastos</p>
+            </div>
+
+            <div class="project">
+                <img src="imagenes/undraw_calendar_re_ki49.svg" alt="Adminstrador de reuniones">
+                <p class="parrafoProject">Administrador de reuniones</p>
+            </div>
+
+            <div class="project">
+                <img src="imagenes/undraw_app_installation_re_h36x.svg" alt="Todo app">
+                <p class="parrafoProject">Todo app</p>
+            </div>
+
+            <div class="project">
+                <img src="imagenes/undraw_horror_movie_3988.svg" alt="Buscador de películas">
+                <p class="parrafoProject">Buscador de películas</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!---++++++++++++SECCIÓN DE FORMULARIO++++++++++++++-->
+
+    <section class="seccionContacto" id="contacto">
+
+        <div class="formulario">
+
+            <div class="contactame">
+                <h2 class="cuartoTitulo">Contactame</h2>
+                <div class="descripcion4">Seguime en mis redes sociales <br>
+                    Lorem ipsum dolor sit amet consectetur,<br>
+                    adipisicing elit. Rem voluptate tenetur <br>
+                    facilis, quae at corrupti natus explicabo<br>
+                    necessitatibus totam saepe.
+                </div>
+
+                <div class="redes">
+                    <div twitter><i class="fa-brands fa-twitter"></i></div>
+                    <a class="misRedes" href="https://twitter.com/ferkyshay">Fernanda Sabrina Paz</a>
+                </div>
+
+                <div class="redes">
+                    <i class="fa-brands fa-github"></i>
+                    <a class="misRedes" href="https://github.com/sabrypaz">Sabrina Paz</a>
+                </div>
+
+                <div class="redes">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <a class="misRedes" href="https://www.linkedin.com/in/sabrinapaz575">Sabrina Paz</a>
+                </div>
+
+                <div class="redes">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a class="misRedes" href="https://www.gmail.com">sabrinapaz575@gmail.com</a>
+                </div>
+
+            </div>
+
+
+            <div class="escribime">
+                <h2 class="quintoTitulo">Escribime</h2>
+                <form>
+                    <div>
+                        <label>Nombre*</label>
+                        <input type="text" id="nombre" placeholder="Ejemplo: Sabrina" required>
+                        <label>Apellido*</label>
+                        <input type="text" id="apellido" placeholder="Ejemplo: Paz" required>
+                    </div>
+                    <div>
+                        <label>Email*</label>
+                        <input type="text" id="email" size="20" placeholder="Ejemplo: sabrinapaz575@gmail.com" required
+                            pattern="@">
+                    </div>
+                    <div>
+                        <label>Mensaje*</label>
+                        <textarea id="bio" placeholder="Escriba un mensaje aquí..." required></textarea>
+                    </div>
+
+                    <div>
+                        <button>ENVIAR</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="navegadorFooter">
+            <div class="finDePagina">
+                <a href="#hola" class="link2">HOLA</a>
+                <a href="#conocimientos" class="link2">CONOCIMIENTOS</a>
+                <a href="#proyectos" class="link2">PROYECTOS</a>
+                <a href="#contacto" class="link2">CONTACTO</a>
+
+            </div>
+
+            <div class="iconoFinPagina">
+                <div class="circulo">
+                    <a href="https://twitter.com/ferkyshay"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                
+                <div class="circulo">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                
+                <div class="circulo">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                
+                <div class="circulo">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+            </div>
+
+            <div class="madeContent">
+                <p class="made">Hecho con</p>
+                <i class="fa-solid fa-heart"></i>
+                <p class="made">por Sabrina</p>
+
+            </div>
+        </div>
+    </footer>
 
 </body>
 
