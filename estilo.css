@@ -28,12 +28,14 @@ header{
     width: 100%;
     display: flex;
     flex-wrap:wrap;
-    padding: 200px 0 100px 0;
+    padding: 200px 0px;
+    align-items: center;
+    justify-content:center;
 }
 
 .saludo{
-    width: 600px;
-    padding-left: 100px;
+    width: 700px;
+
 }
 
 .hola{
@@ -69,7 +71,6 @@ button{
     font-size:medium;
     border-radius: 25px ;
     border-color:rgb(219, 70, 179) ;
-
 }
 
 button:hover{
@@ -78,11 +79,11 @@ button:hover{
 
 .developer{
     width:400px;
-    
+
 }
 
 .desarrolladora{
-    width: 500px;
+    width: 400px;
 }
 
 
@@ -105,6 +106,7 @@ button:hover{
      text-align: center;
      padding-top: 100px;
      font-size: 50px;
+     margin:auto;
      
 }
 .descripcion2 , .descripcion3 {
@@ -290,16 +292,24 @@ p{
 
 .nya{
     display: flex;
+
 }
-input{
-    border-radius: 25px;
+input , .mensaje{
+    border-radius: 25px ;
     background-color: rgb(253, 237, 249);
     padding:10px;
     margin: 5px;
-    border-color: rgb(219, 70, 179);
-}    
-.email{
+    border:2px solid rgb(219, 70, 179);
    
+}
+
+.escribime{
+    margin-bottom: 50px;
+}
+.mensaje{
+    width:400px;
+    height: 150px;
+
 }
 
 /*+++++++++SECCION FOOTER++++++++++++*/
@@ -312,7 +322,7 @@ input{
 .finDePagina{
    
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
    
     
 }
@@ -320,13 +330,13 @@ input{
 .link2{
     color:white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 30px;
+    
     font-size: small;
 }
 
 .iconoFinPagina{    
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .circulo{
@@ -361,6 +371,84 @@ input{
 }
 .madeContent i{
     color:red;
+}
+/*++++++++++seccion responsive+++++++*/
+
+@media screen and (max-width:900px) {
+.saludo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+.developer{
+    width: 350px;
+    padding-top: 50px;
+}    
+.desarrolladora{
+    width:350px;
+}
+.navbar{
+    display: none;
+}
+.presentacion{
+    padding: 100px 0px;
+}
+
+    
+}
+
+@media screen and (max-width:500px){
+    .saludo{
+        width: 300px;
+    }
+    .nombre , .segundoTitulo , .tituloMisProyectos , .autorDeFrase , .cuartoTitulo , .quintoTitulo{
+        font-size: 35px;
+    }
+    .developer{
+        width:250px;
+    }
+    .desarrolladora{
+        width: 250px;
+    }
+    .finDePagina{
+        display:none;
+    }
+    .descripcion4{
+        font-size: 10px;
+    }
+    .hola{
+        font-size: 20px;
+    }
+    .contactame , .escribime{
+        text-align: center;
+    }
+    .nya{
+        display: inline;
+
+    }
+    .email{
+        size: 40px;
+    }
+    .mensaje{
+        width:280px;
+    }
+}
+
+@media  screen and (max-width:350px){
+    .project img{
+        width: 220px;
+        height: 200px;
+        padding: 10px;
+    }
+    input , .mensaje{
+        width: 220px;
+    }
+    .circulo{
+        margin:10px;
+    }
+
+    
 }
 
 
