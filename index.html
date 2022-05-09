@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
     <title>Portfolio</title>
 </head>
@@ -52,15 +55,9 @@
             <div class="cajitas">
 
                 <div class="iconoLen">
-                    <div class="font">
-                        <i class="fa-brands fa-html5"></i>
-                    </div>
-
-                    <div>
-                        <p>HTML 5</p>
-                    </div>
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML 5</p>
                 </div>
-
 
                 <div class="iconoLen">
                     <i class="fa-brands fa-css3-alt"></i>
@@ -149,7 +146,7 @@
     </section>
     <!---++++++++++++SECCIÓN DE FORMULARIO++++++++++++++-->
 
-     <section class="seccionContacto" id="contacto">
+    <section class="seccionContacto" id="contacto">
 
         <div class="formulario">
 
@@ -163,23 +160,51 @@
                 </div>
 
                 <div class="redes">
-                    <div twitter><i class="fa-brands fa-twitter"></i></div>
-                    <a class="misRedes" href="https://twitter.com/ferkyshay">Fernanda Sabrina Paz</a>
+
+                    <div class="social">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+
+                    <div class="misRedes">
+                        <a href="https://twitter.com/ferkyshay">Fernanda Sabrina Paz</a>
+                    </div>
+
                 </div>
 
                 <div class="redes">
-                    <i class="fa-brands fa-github"></i>
-                    <a class="misRedes" href="https://github.com/sabrypaz">Sabrina Paz</a>
+
+                    <div class="social">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                    <div class="misRedes">
+                        <a href="https://github.com/sabrypaz">Sabrina Paz</a>
+                    </div>
+
                 </div>
 
                 <div class="redes">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <a class="misRedes" href="https://www.linkedin.com/in/sabrinapaz575">Sabrina Paz</a>
+
+                    <div class="social">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <div class="misRedes">
+                        <a href="https://www.linkedin.com/in/sabrinapaz575">Sabrina Paz</a>
+                    </div>
+
                 </div>
 
                 <div class="redes">
-                    <i class="fa-solid fa-envelope"></i>
-                    <a class="misRedes" href="https://www.gmail.com">sabrinapaz575@gmail.com</a>
+
+                    <div class="social">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="misRedes">
+                        <a href="https://www.gmail.com">sabrinapaz575@gmail.com</a>
+                    </div>
+
                 </div>
 
             </div>
@@ -189,14 +214,14 @@
                 <form class="hablame">
                     <div class="nya">
                         <div>
-                           <label>Nombre*</label><br>
-                           <input type="text" id="nombre" size="25" placeholder="Ejemplo: Sabrina" required>
+                            <label>Nombre*</label><br>
+                            <input type="text" id="nombre" size="25" placeholder="Ejemplo: Sabrina" required>
                         </div>
 
                         <div>
-                           <label>Apellido*</label><br>
-                           <input type="text" id="apellido" size="25" placeholder="Ejemplo: Paz" required>
-                       </div>  
+                            <label>Apellido*</label><br>
+                            <input type="text" id="apellido" size="25" placeholder="Ejemplo: Paz" required>
+                        </div>
                     </div>
 
                     <div class="email">
@@ -206,7 +231,7 @@
                     </div>
                     <div>
                         <label>Mensaje*</label><br>
-                        <textarea id="bio"  placeholder="Escriba un mensaje aquí..." required class="mensaje"></textarea>
+                        <textarea id="bio" placeholder="Escriba un mensaje aquí..." required class="mensaje"></textarea>
                     </div>
 
                     <div>
@@ -218,7 +243,7 @@
             </div>
         </div>
     </section>
-<!---+++++++++++++++SECCION FOOTER++++++++++++++++-->    
+    <!---+++++++++++++++SECCION FOOTER++++++++++++++++-->
     <footer>
         <div class="navegadorFooter">
             <div class="finDePagina">
@@ -231,19 +256,27 @@
 
             <div class="iconoFinPagina">
                 <div class="circulo">
-                    <a href="https://twitter.com/ferkyshay"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://twitter.com/ferkyshay">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
                 </div>
-                
+
                 <div class="circulo">
-                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/sabrypaz">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                 </div>
-                
+
                 <div class="circulo">
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <a href="https://www.linkedin.com/in/sabrinapaz575">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
                 </div>
-                
+
                 <div class="circulo">
-                    <i class="fa-solid fa-envelope"></i>
+                    <a href="https://www.gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
                 </div>
 
             </div>
