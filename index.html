@@ -10,38 +10,40 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagenes/favicon.png">
     <link rel="stylesheet" href="estilo.css">
     <title>Portfolio</title>
 </head>
 
 <body>
+    <!---+++++++++++++++++++SECCION HEADER++++++++++++++++++-->
     <header>
         <nav>
             <div class="navbar">
-
-                <a href="#hola" class="link">HOLA</a>
-                <a href="#conocimientos" class="link">CONOCIMIENTOS</a>
-                <a href="#proyectos" class="link">PROYECTOS</a>
-                <button><a href="#contacto">CONTACTO</a></button>
+                <ul class="barraNav">
+                    <li><a href="#hola" class="link">HOLA</a></li>
+                    <li><a href="#conocimientos" class="link">CONOCIMIENTOS</a></li>
+                    <li><a href="#proyectos" class="link">PROYECTOS</a></li>
+                    <li><button><a href="#contacto">CONTACTO</a></button></li>
+                </ul>
 
             </div>
         </nav>
     </header>
     <!---INICIO DE SECCIÓN PRESENTACIÓN--->
-    <section class="presentacion" id="hola">
+    <section aria-label="seccion de presentacion" class="presentacion" id="hola">
 
         <div class="saludo">
 
             <div class="hola">¡Hola! Soy</div>
-            <div class="nombre">Sabrina Paz</div>
+            <div class="nombre"><h1>Sabrina Paz</h1></div>
             <div class="descripcion">Desarrolladora frontend, confiable, divertida y amigable.</div>
 
             <button><a href="#proyectos">LO QUE HAGO</a></button>
         </div>
 
         <div class="developer">
-            <img src="imagenes/developer.svg" alt="Desarrolladora en acción" class="desarrolladora">
+            <img aria-label="mujer desarrolladora" src="imagenes/developer.svg" alt="Mujer desarrolladora en acción" class="desarrolladora">
         </div>
 
     </section>
@@ -50,7 +52,8 @@
 
         <div clas="lenguajes">
             <h2 class="segundoTitulo">Mis Conocimientos</h2>
-            <p class="descripcion2">Egresada de ADA ITW 2022</p>
+            <p class="descripcion2">En mi formación en ADA ITW <br>
+                he incursionado en los siguentes lenguajes</p>
 
             <div class="cajitas">
 
@@ -93,51 +96,56 @@
         <div class="comillas"><i class="fa-solid fa-quote-right"></i>
         </div>
 
-        <p class="textoDeFrase">Si se puede imaginar,<br>
-            se puede programar.
+        <p class="textoDeFrase">Si puedes superar esa sensación de estar asustado,<br>
+            esa sensación de riesgo,<br>
+            pueden suceder cosas realmente asombrosas.
         </p>
-        <p class="autorDeFrase">Alguien</p>
+        <p class="autorDeFrase">Marissa Mayer</p>
 
     </blockquote>
     <!---++++++++++++++SECCION DE PROYECTOS+++++++++++++++++-->
-    <section class="proyectos" id="proyectos">
+    <section aria-label="sección de proyectos" class="proyectos" id="proyectos">
+
         <div class="tercerTitulo">
             <h2 class="tituloMisProyectos">Mis proyectos</h2>
-            <p class="descripcion3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, impedit?</p>
+            <p class="descripcion3">Los conocimientos adquiridos <br>
+                me permitieron desarrollar los siguientes proyectos</p>
         </div>
+
         <div class="cuadros">
+
             <div class="project">
-                <img src="imagenes/portfolio.png" alt="Mi Portfolio">
+                <img aria-hidden="true" src="imagenes/portfolio.png" alt="Mi Portfolio" >
                 <p class="parrafoProject">Portfolio</p>
             </div>
 
             <div class="project">
-                <img src="imagenes/undraw_mobile_user_re_xta4 (1).svg" alt="Generador de Memes">
+                <img aria-hidden="true" src="imagenes/undraw_mobile_user_re_xta4 (1).svg" alt="Generador de Memes" >
                 <p class="parrafoProject">Generador de memes</p>
             </div>
 
             <div class="project">
-                <img src="imagenes/undraw_old_day_-6-x25.svg" alt="Match 3">
+                <img aria-hidden="true" src="imagenes/undraw_old_day_-6-x25.svg" alt="Match 3" >
                 <p class="parrafoProject">Match 3</p>
             </div>
 
             <div class="project">
-                <img src="imagenes/undraw_make_it_rain_iwk4.svg" alt="Controlador de Gastos">
+                <img aria-hidden="true" src="imagenes/undraw_make_it_rain_iwk4.svg" alt="Controlador de Gastos" >
                 <p class="parrafoProject">Controlador de gastos</p>
             </div>
 
             <div class="project">
-                <img src="imagenes/undraw_calendar_re_ki49.svg" alt="Adminstrador de reuniones">
+                <img aria-hidden="true" src="imagenes/undraw_calendar_re_ki49.svg" alt="Adminstrador de reuniones" >
                 <p class="parrafoProject">Administrador de reuniones</p>
             </div>
 
             <div class="project">
-                <img src="imagenes/undraw_app_installation_re_h36x.svg" alt="Todo app">
+                <img aria-hidden="true" src="imagenes/undraw_app_installation_re_h36x.svg" alt="Todo app" >
                 <p class="parrafoProject">Todo app</p>
             </div>
 
             <div class="project">
-                <img src="imagenes/undraw_horror_movie_3988.svg" alt="Buscador de películas">
+                <img aria-hidden="true" src="imagenes/undraw_horror_movie_3988.svg" alt="Buscador de películas" >
                 <p class="parrafoProject">Buscador de películas</p>
             </div>
 
@@ -146,39 +154,26 @@
     </section>
     <!---++++++++++++SECCIÓN DE FORMULARIO++++++++++++++-->
 
-    <section class="seccionContacto" id="contacto">
+    <section aria-label="sección de links de redes sociales" class="seccionContacto" id="contacto">
 
         <div class="formulario">
 
             <div class="contactame">
+
                 <h2 class="cuartoTitulo">Contactame</h2>
-                <div class="descripcion4">Seguime en mis redes sociales <br>
-                    Lorem ipsum dolor sit amet consectetur,<br>
-                    adipisicing elit. Rem voluptate tenetur <br>
-                    facilis, quae at corrupti natus explicabo<br>
-                    necessitatibus totam saepe.
+                <div class="descripcion4">Si te interesaron mis proyectos<br> y querés conocer mas de mis ideas,<br>
+                    podés contactarme por mis redes sociales<br>
+                    o bien enviarme un email desde el formulario.
                 </div>
 
                 <div class="redes">
 
                     <div class="social">
-                        <i class="fa-brands fa-twitter"></i>
+                        <i aria-hidden="true" class="fa-brands fa-twitter"></i>
                     </div>
 
                     <div class="misRedes">
-                        <a href="https://twitter.com/ferkyshay">Fernanda Sabrina Paz</a>
-                    </div>
-
-                </div>
-
-                <div class="redes">
-
-                    <div class="social">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-
-                    <div class="misRedes">
-                        <a href="https://github.com/sabrypaz">Sabrina Paz</a>
+                        <a href="https://twitter.com/ferkyshay" aria-label="twitter" >Fernanda Sabrina Paz</a>
                     </div>
 
                 </div>
@@ -186,11 +181,11 @@
                 <div class="redes">
 
                     <div class="social">
-                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i aria-hidden="true" class="fa-brands fa-github"></i>
                     </div>
 
                     <div class="misRedes">
-                        <a href="https://www.linkedin.com/in/sabrinapaz575">Sabrina Paz</a>
+                        <a href="https://github.com/sabrypaz" aria-label="github">Sabrina Paz</a>
                     </div>
 
                 </div>
@@ -198,44 +193,61 @@
                 <div class="redes">
 
                     <div class="social">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i aria-hidden="true" class="fa-brands fa-linkedin-in"></i>
                     </div>
 
                     <div class="misRedes">
-                        <a href="https://www.gmail.com">sabrinapaz575@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/sabrinapaz575" aria-label="linkedin">Sabrina Paz</a>
+                    </div>
+
+                </div>
+
+                <div class="redes">
+
+                    <div class="social">
+                        <i aria-hidden="true" class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="misRedes">
+                        <a href="https://www.gmail.com" aria-label="email">sabrinapaz575@gmail.com</a>
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="escribime">
+            <div class="escribime" aria-label="formulario de contacto">
+
                 <h2 class="quintoTitulo">Escribime</h2>
                 <form class="hablame">
+
                     <div class="nya">
                         <div>
-                            <label>Nombre*</label><br>
+                            <label for="nombre" >Nombre*</label><br>
                             <input type="text" id="nombre" size="25" placeholder="Ejemplo: Sabrina" required>
                         </div>
 
                         <div>
-                            <label>Apellido*</label><br>
+                            <label for="apellido" >Apellido*</label><br>
                             <input type="text" id="apellido" size="25" placeholder="Ejemplo: Paz" required>
                         </div>
                     </div>
 
                     <div class="email">
-                        <label>Email*</label><br>
+                        <label for="email" >Email*</label><br>
                         <input type="text" id="email" size="40" placeholder="Ejemplo: sabrinapaz575@gmail.com" required
                             pattern="@">
                     </div>
                     <div>
-                        <label>Mensaje*</label><br>
+                        <label for="mensaje" >Mensaje*</label><br>
                         <textarea id="bio" placeholder="Escriba un mensaje aquí..." required class="mensaje"></textarea>
                     </div>
 
                     <div>
-                        <button><a href="https://sabrinapaz575@gmail.com">ENVIAR</a></button>
+                        <label>
+                            <button><a href="https://sabrinapaz575@gmail.com">ENVIAR</a></button>
+
+                        </label>
                     </div>
 
                 </form>
@@ -245,8 +257,11 @@
     </section>
     <!---+++++++++++++++SECCION FOOTER++++++++++++++++-->
     <footer>
+
         <div class="navegadorFooter">
+
             <div class="finDePagina">
+
                 <a href="#hola" class="link2">HOLA</a>
                 <a href="#conocimientos" class="link2">CONOCIMIENTOS</a>
                 <a href="#proyectos" class="link2">PROYECTOS</a>
@@ -255,35 +270,37 @@
             </div>
 
             <div class="iconoFinPagina">
+
                 <div class="circulo">
-                    <a href="https://twitter.com/ferkyshay">
-                        <i class="fa-brands fa-twitter"></i>
+                    <a href="https://twitter.com/ferkyshay" arila-label="twitter">
+                        <i aria-hiden="true" class="fa-brands fa-twitter"></i>
                     </a>
                 </div>
 
                 <div class="circulo">
-                    <a href="https://github.com/sabrypaz">
-                        <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/sabrypaz" aria-label="github">
+                        <i aria-hiden="true" class="fa-brands fa-github"></i>
                     </a>
                 </div>
 
                 <div class="circulo">
-                    <a href="https://www.linkedin.com/in/sabrinapaz575">
-                        <i class="fa-brands fa-linkedin-in"></i>
+                    <a href="https://www.linkedin.com/in/sabrinapaz575" aria-label="linkedin">
+                        <i aria-hiden="true" class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
 
                 <div class="circulo">
-                    <a href="https://www.gmail.com">
-                        <i class="fa-solid fa-envelope"></i>
+                    <a href="https://www.gmail.com" aria-label="email">
+                        <i aria-hiden="true" class="fa-solid fa-envelope"></i>
                     </a>
                 </div>
 
             </div>
 
             <div class="madeContent">
+
                 <p class="made">Hecho con</p>
-                <i class="fa-solid fa-heart"></i>
+                <i aria-hidden="true" class="fa-solid fa-heart"></i>
                 <p class="made">por Sabrina</p>
 
             </div>

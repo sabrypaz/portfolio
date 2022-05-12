@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-
+/*++++++++++SECCION HEADER++++++++*/
 header{
     width:100%;
     position: fixed;
@@ -10,11 +10,20 @@ header{
 }
 
 .navbar{
-    display:flex;
-    align-items: center;
-    justify-content:end;
-    width: 100%;
+     width: 100%;
     background: rgb(241, 172, 203);
+    
+}
+.barraNav{
+    display:flex;
+    align-content: flex-end;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    padding:10px 40px;
+    
+   
 }
 
 .link{
@@ -23,6 +32,7 @@ header{
     font-size: medium;
     color:blueviolet;
     text-decoration: none;
+    
 }
 
 /*++++++++++SECCCION PRESENTACION++++++++*/
@@ -49,7 +59,7 @@ header{
 .nombre{
     color:rgb(219, 70, 179);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bolder;
 }
 
@@ -128,6 +138,7 @@ button:hover{
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 100px;
+    padding-top: 50px;
     
 
 }
@@ -303,6 +314,7 @@ p{
 .redes:hover a{
     color :blueviolet;
 }
+
 .redes:hover i{
     border-radius: 50%;
     background-color: blueviolet;
@@ -330,6 +342,7 @@ input , .mensaje{
 
 input:focus{
    box-shadow: 0px 0px 20px 3px grey ;
+   border: 3px solid rgb(199, 29, 199);
    
 }
 
@@ -352,7 +365,7 @@ input:focus{
    
     display: flex;
     justify-content:space-evenly;
-    padding: 50px;
+    padding: 50px 0px 20px;
    
     
 }
@@ -367,6 +380,7 @@ input:focus{
 .iconoFinPagina{    
     display: flex;
     justify-content: center;
+    padding: 10px 0px;
 }
 
 .circulo{
@@ -387,6 +401,7 @@ input:focus{
 .circulo:hover{
     border:1px solid white;
     background-color: rgb(219, 70, 179);
+   
 }
 .circulo:hover i{
     color:white;
@@ -395,6 +410,7 @@ input:focus{
 .madeContent{
     display: flex;
     justify-content: center;
+    padding: 20px 0px 50px 0px;
 }
 
 .made{
@@ -462,7 +478,7 @@ input:focus{
 
     }
     .email{
-        size: 40px;
+        size: 35px;
     }
     .mensaje{
         width:280px;
