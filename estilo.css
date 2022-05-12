@@ -70,7 +70,7 @@ header{
     font-size:larger;
 }
 
-button{
+button , .botonEnviar{
     padding: 3px;
     background-color: rgb(219, 70, 179);
     width: 200px;
@@ -79,9 +79,10 @@ button{
     font-size:medium;
     border-radius: 25px ;
     border-color:rgb(219, 70, 179) ;
+
     
 }
-button a{
+button a {
     text-decoration: none;
     color: white;
 }
@@ -488,14 +489,14 @@ input:focus{
     }
 }
 
-@media  screen and (max-width:350px){
+@media  screen and (max-width:380px){
     .project img{
         width: 220px;
         height: 200px;
         padding: 10px;
     }
     input , .mensaje{
-        width: 220px;
+        width: 200px;
     }
     .circulo{
         margin:10px;
